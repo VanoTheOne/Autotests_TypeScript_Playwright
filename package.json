@@ -10,7 +10,7 @@
     "report": "npx allure generate allure-results --clean -o allure-report && npx allure open allure-report",
     "lint": "eslint --debug ./ --fix",
     "lint:write": "eslint ./ --fix && npm run pretty",
-    "pretty": "prettier --write */**/*.js"
+    "pretty": "prettier --write */**/*.ts"
   },
   "keywords": [],
   "author": "",
@@ -19,10 +19,11 @@
   "devDependencies": {
     "@playwright/test": "^1.56.1",
     "@types/node": "^24.9.1",
+    "allure-playwright": "^3.4.3",
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "allure": "^3.0.0-beta.20",
+    "allure": "^0.0.0",
     "config.ts": "^1.0.0",
     "eslint": "^9.38.0",
     "prettier": "^3.6.2",

@@ -21,7 +21,7 @@ export default class LoginPage extends Base {
   }
 
   get emailInputField() {
-    return this.page.locator ('input[type="email"]');
+    return this.page.locator('input[type="email"]');
   }
 
   get passwordInputField() {

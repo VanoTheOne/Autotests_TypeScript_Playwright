@@ -5,7 +5,7 @@ async function globalSetup(): Promise<void> {
   const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext();
   const page = await context.newPage();
-  const loginPage = new LoginPage(page, browser);
+  const loginPage = new LoginPage(page);
 
   console.log('Starting login');
   await loginPage.logInUser(page);
